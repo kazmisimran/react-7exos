@@ -51,7 +51,7 @@ export default function App() {
             {/* <Exo2></Exo2> */}
           </Route>
           <Route path="/exo3">
-            {/* <Exo3></Exo3> */}
+            <Exo3></Exo3>
           </Route>
           <Route path="/exo4">
             {/* <Exo4></Exo4> */}
