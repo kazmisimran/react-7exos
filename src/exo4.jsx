@@ -1,24 +1,31 @@
 import React, { useState } from "react";
 
 export default function Exo4() {
-    const [compt, setCompt] = useState(0);
+    const [compt, setCompt] = useState(1);
 
     let changePlace = ()=>{
-        setCompt(compt+1);
+        console.log('0: '+compt)
+        setCompt(compt+1); 
+        console.log('1: '+compt)
         dalanda();
-
+        console.log('2: '+compt)
     }
-
     let dalanda =()=>{
+        console.log('dalanda 1: '+compt)
         let square1 = document.getElementById('square1');
         let square2 = document.getElementById('square2');
-        if(compt%2==0 || compt==0){
+        if(compt%2==0){
             square1.classList.add('d-none');
             square2.classList.remove('d-none');
         }else{
-           square1.classList.remove('d-none');
-           square2.classList.add('d-none');
+            square1.classList.remove('d-none');
+            square2.classList.add('d-none');
         }
+        console.log('dalanda 2: '+compt)
+    }
+    let reset =()=>{
+        setCompt(0);
+        dalanda();
     }
 
     return (
@@ -41,7 +48,7 @@ export default function Exo4() {
                 <button onClick={()=>{changePlace()}} type="button" className="btn btn-info d-block" id="btnPlace">Change place</button>
             </div>
             <div className="d-flex justify-content-center">
-                <button type="button" className="btn bg-info text-white d-block" id="clickNumber"> {compt} </button>
+                <button onClick={()=>{reset()}} type="button" className="btn bg-info text-white d-block" id="clickNumber"> {compt} </button>
             </div>
         </div>
 
