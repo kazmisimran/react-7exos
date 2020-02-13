@@ -37,6 +37,7 @@
   }
 }
 
+/* Barre de navigation */
 .panel ul{
   list-style-type: none;
   display: flex;
@@ -44,4 +45,8 @@
   margin-top: 2%;
 }
 
-
+/* Exo4 */
+.chiant{
+  height: 400px;
+  width: 400px;
+}
