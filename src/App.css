@@ -50,3 +50,32 @@
   height: 400px;
   width: 400px;
 }
+
+/* Exo6 */
+#calculator{
+  border-radius: 10%;
+}
+
+.number ,.operator,.clear,.egal{
+  height: 3vw;
+  width: 3vw;
+  border-radius: 50%;
+  border: none;
+}
+.number{
+  background-color: white;
+}
+
+
+
+.calculator{
+  width: 17vw;
+  padding: 1%;
+  border-radius: 2%;
+}
+
+#result{
+  height:50px;
+  width: 50px;
+}
+
