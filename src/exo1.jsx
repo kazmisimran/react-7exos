@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+//Utiliser useEffect
+
 
 export default function Exo1() {
 
@@ -24,7 +26,7 @@ export default function Exo1() {
             <p>Liste de props à retrouver dans la documentation: </p>
             <ul>
                 <li>InnerText</li>
-                <li>nnerHTML</li>
+                <li>InnerHTML</li>
                 <li>querySelector()</li>
                 <li>querySelectorAll()</li>
                 <li>style</li>
