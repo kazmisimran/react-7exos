@@ -7,8 +7,6 @@ export default function Exo6() {
     //Niv1
     const [answer, setAnswer] = useState()
 
-
-
     let op = () => {
         let nb1 = document.getElementById('nb1');
         let nb2 = document.getElementById('nb2');
@@ -33,12 +31,11 @@ export default function Exo6() {
         let history = document.getElementById('history');
         history.value += value;
     }
-
+                                
     let equals = () => {
         let history = document.getElementById('history');
         setAns(eval(history.value));
         history.value = " ";
-
     }
 
     let reset = () => {
@@ -47,7 +44,7 @@ export default function Exo6() {
         setAns(' ');
     }
 
-    return (
+    return (                
 
         <div className='bg-light my-5 px-5 py-5 container'>
             <h3>Niveau 1</h3>

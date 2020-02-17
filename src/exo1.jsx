@@ -5,20 +5,20 @@ import React, { useState } from "react";
 
 export default function Exo1() {
 
-    let [titre, setTitre] = useState('Mon titre');
+    let [titre, setTitre] = useState('Dalanda');
     let [color, setColor] = useState(true);
     let [bgColor, setBgColor] = useState(true);
 
     return (
-        <div className="container my-5 bg-light h-50">
+        <div className="container my-5 text-white h-50">
             <h1 onMouseEnter={() => {
-                setTitre("Mon titre modifié");
+                setTitre("Beyoncé");
                 setColor(false);
                 setBgColor(false)
             }}
-                className={bgColor ? color ? "bg-light" : "bg-light text-danger" : color ? "bg-info" : "bg-info text-danger"}
+                className={bgColor ? color ? "bg-dark" : "bg-dark text-danger" : color ? "bg-info" : "bg-info text-danger"}
                 onMouseLeave={() => {
-                    setTitre("Mon titre");
+                    setTitre("Dalanda");
                     setColor(true);
                     setBgColor(true)
                 }}

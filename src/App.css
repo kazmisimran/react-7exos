@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
+
+#tout{
+  font-family: 'Cedarville Cursive', cursive;
+  background-color: darkgreen;
+}
+
+
 .App {
   text-align: center;
 }
@@ -43,6 +51,12 @@
   display: flex;
   justify-content: space-around;
   margin-top: 2%;
+
+}
+
+.panel ul li a{
+  color: white;
+  text-decoration: none;
 }
 
 /* Exo4 */
@@ -78,4 +92,5 @@
   height:50px;
   width: 50px;
 }
+
 

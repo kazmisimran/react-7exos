@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function Exo5() {
     //Liste d'oeufs 
-const [compt, setCompt] = useState(0)
+    const [compt, setCompt] = useState(0)
 
 
     let add = () => {
@@ -13,15 +13,15 @@ const [compt, setCompt] = useState(0)
         img.classList.add('App-logo');
         img.classList.add('rounded-circle');
         divOeuf.appendChild(img);
-        setCompt(compt+1)
+        setCompt(compt + 1)
     }
 
     let remove = () => {
         let divOeuf = document.getElementById('divOeuf');
-        if(compt>0){
-            setCompt(compt-1);
+        if (compt > 0) {
+            setCompt(compt - 1);
         }
-        if(divOeuf.childElementCount > 0){
+        if (divOeuf.childElementCount > 0) {
             divOeuf.removeChild(divOeuf.lastChild);
         }
     }
@@ -30,7 +30,6 @@ const [compt, setCompt] = useState(0)
         let compteur = document.getElementById('compteur');
         let divOeuf = document.getElementById('divOeuf');
         setCompt(0);
-
         divOeuf.innerHTML = "";
         compteur.innerHTML = `${compt}`;
     }
@@ -39,10 +38,10 @@ const [compt, setCompt] = useState(0)
     return (
         <div>
             <div class="d-flex justify-content-center mt-5 mb-3">
-                <button type="button" onClick={()=> add()} class="btn btn-info d-block mx-2" id="btnAdd">ADD</button>
-                <button type="button" onClick={()=> remove()} className="btn btn-info d-block mx-2" id="btnRem">REMOVE</button>
-                <button type="button" onClick={()=>removeAll()} className="btn btn-info d-block mx-2" id="btnRemAll">REMOVE ALL</button>
-    <button type="button" className="btn  btn-info d-block mx-2" id="compteur">{compt}</button>
+                <button type="button" onClick={() => add()} class="btn btn-light text-success d-block mx-2" id="btnAdd">ADD</button>
+                <button type="button" onClick={() => remove()} className="btn btn-light text-success d-block mx-2" id="btnRem">REMOVE</button>
+                <button type="button" onClick={() => removeAll()} className="btn btn-light text-success d-block mx-2" id="btnRemAll">REMOVE ALL</button>
+                <button type="button" className="btn btn-light text-success d-block mx-2" id="compteur">{compt}</button>
 
 
             </div>

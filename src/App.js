@@ -48,7 +48,7 @@ export default function App() {
 
         <Switch>
           <Route path="/exo2">
-            {/* <Exo2></Exo2> */}
+            <Exo2></Exo2>
           </Route>
           <Route path="/exo3">
             <Exo3></Exo3>
@@ -63,7 +63,7 @@ export default function App() {
             <Exo6></Exo6>
           </Route>
           <Route path="/exo7">
-            {/* <Exo7></Exo7> */}
+            <Exo7></Exo7>
           </Route>
           <Route path="/">
             <Exo1></Exo1>

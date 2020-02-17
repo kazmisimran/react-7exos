@@ -10,7 +10,7 @@ export default function Exo3() {
     return (
         <div className="bg-light container my-5 py-5 px-5">
             <h1>Shalom {name}</h1>
-            <p>Entrez votre prénom.</p>
+            <p>Présentez vous à Dalanda.</p>
             <input onKeyUp={(e) => {
                 if (e.key === "Enter") {
                     changeName();
